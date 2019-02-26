@@ -1,0 +1,19 @@
+remote_theme: ISSAE/architect
+
+name: TP injection de dépendences
+
+author: Pascal Fares
+
+author_email: pascal.fares@isae.edu.lb
+
+title: TP injection de dépendences
+description: Programmation Avancée et Patron de conception en Java
+
+google_analytics: UA-29708002-2
+
+repository: ISSAE/nfp121.tpInjection
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
