@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=MovieLister
+comment1.params=
+comment1.target=MovieLister()
+comment2.params=finder
+comment2.target=void\ setFinder(MovieFinder)
+comment3.params=arg
+comment3.target=java.util.List\ moviesDirectedBy(java.lang.String)
+numComments=4

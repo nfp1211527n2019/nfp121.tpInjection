@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=TexteDecore
+comment1.params=
+comment1.target=TexteDecore()
+comment2.params=unTexte
+comment2.target=void\ setUnTexte(TexteI)
+comment3.params=unTexte
+comment3.target=TexteDecore(TexteI)
+comment4.params=
+comment4.target=java.lang.String\ toHTML()
+numComments=5
