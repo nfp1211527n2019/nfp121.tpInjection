@@ -1,6 +1,9 @@
 # femtoContainer, un fichier de configuration
-# généré par config_editor.GUI le 01/11/2018 11:32:57
+# généré par config_editor.GUI le 27/02/2019 09:30:57
 #
 #
-bean.id.1=test
-test.class=Test.class
+#
+bean.id.1=2
+2.class=X
+2.property.1=a
+2.property.1.param.1=b
