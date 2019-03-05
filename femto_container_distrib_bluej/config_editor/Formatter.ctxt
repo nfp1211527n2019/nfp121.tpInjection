@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.target=Formatter
-comment0.text=\ Interface\ pour\ la\ g\u00E9n\u00E9ration\ du\ fichier\ de\ configuration\ selon\ plusieurs\ formats.\r\n\ \r\n
+comment0.text=\ Interface\ pour\ la\ g\u00C3\u00A9n\u00C3\u00A9ration\ du\ fichier\ de\ configuration\ selon\ plusieurs\ formats.\r\n\ \r\n
 comment1.params=
 comment1.target=void\ newLine()
 comment2.params=comment
