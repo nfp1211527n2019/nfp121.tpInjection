@@ -11,9 +11,7 @@ public class FileSystemXMLApplicationContext extends AbstractApplicationContext{
   public FileSystemXMLApplicationContext(InputStream inputStream){
     super();
     try{
-      // à compléter
-      
-      
+      // à compléter  
     }catch(Exception e){
       throw new RuntimeException(e.getMessage());
     }
