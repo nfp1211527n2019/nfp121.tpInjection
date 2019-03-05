@@ -3,12 +3,12 @@ package question1.exemples;
 
 public class Auditeur{
   private String nom;
-  private String prénom;
+  private String prÃ©nom;
   private String matricule;
   
-  public Auditeur(String nom, String prénom, String matricule){
+  public Auditeur(String nom, String prÃ©nom, String matricule){
     this.nom       = nom;
-    this.prénom    = prénom;
+    this.prÃ©nom    = prÃ©nom;
     this.matricule = matricule;
   }
   

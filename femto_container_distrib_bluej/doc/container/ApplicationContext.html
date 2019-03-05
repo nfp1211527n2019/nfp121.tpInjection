@@ -46,10 +46,10 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public interface <span class="typeNameLabel">ApplicationContext</span>
 extends java.lang.Iterable&lt;java.lang.String&gt;</pre>
-<div class="block"><b>femtoContainer</b> est unn conteneur de beans adaptÈ au cours NFP121 du Cnam.<br>
- L'injection des dÈpendances est effectuÈ par l'appel des mutateurs.<br>
- Un fichier de configuration prÈcise les noms des beans et des propritÈs ‡ injecter<br>
- Le format du fichier est dÈfini depuis la classe Factory cf. la classe container.Factory<br><br>
+<div class="block"><b>femtoContainer</b> est unn conteneur de beans adapt√© au cours NFP121 du Cnam.<br>
+ L'injection des d√©pendances est effectu√© par l'appel des mutateurs.<br>
+ Un fichier de configuration pr√©cise les noms des beans et des proprit√©s √† injecter<br>
+ Le format du fichier est d√©fini depuis la classe Factory cf. la classe container.Factory<br><br>
 
  <br><u>Un exemple d'utilisation:</u><br>
  <pre>
@@ -89,7 +89,7 @@ extends java.lang.Iterable&lt;java.lang.String&gt;</pre>
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../container/ApplicationContext.html#addApplicationContext-container.ApplicationContext-">addApplicationContext</a></span>(<a href="../container/ApplicationContext.html" title="interface in container">ApplicationContext</a>&nbsp;appContext)</code>
 <div class="block">Ajout, cumul d'une autre instance d'ApplicationContext
- Tous les beans de l'instance appContext sont ajoutÈs au conteneur</div>
+ Tous les beans de l'instance appContext sont ajout√©s au conteneur</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
@@ -107,13 +107,13 @@ extends java.lang.Iterable&lt;java.lang.String&gt;</pre>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.lang.Class&lt;?&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../container/ApplicationContext.html#getType-java.lang.String-">getType</a></span>(java.lang.String&nbsp;id)</code>
-<div class="block">Obtention du type du bean ‡ partir de son identifiant.</div>
+<div class="block">Obtention du type du bean √† partir de son identifiant.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>java.util.Iterator&lt;java.lang.String&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../container/ApplicationContext.html#iterator--">iterator</a></span>()</code>
-<div class="block">Obtention d'un itÈrateur sur les beans ptÈsents dans ce conteneur.</div>
+<div class="block">Obtention d'un it√©rateur sur les beans pt√©sents dans ce conteneur.</div>
 </td>
 </tr>
 </table>
@@ -146,12 +146,12 @@ extends java.lang.Iterable&lt;java.lang.String&gt;</pre>
 <h4>addApplicationContext</h4>
 <pre>void&nbsp;addApplicationContext(<a href="../container/ApplicationContext.html" title="interface in container">ApplicationContext</a>&nbsp;appContext)</pre>
 <div class="block">Ajout, cumul d'une autre instance d'ApplicationContext
- Tous les beans de l'instance appContext sont ajoutÈs au conteneur</div>
+ Tous les beans de l'instance appContext sont ajout√©s au conteneur</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>appContext</code> - le conteneur ‡ ajouter</dd>
+<dd><code>appContext</code> - le conteneur √† ajouter</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.RuntimeException</code> - "dÈj‡ un bean avec cet identifiant: " + id</dd>
+<dd><code>java.lang.RuntimeException</code> - "d√©j√† un bean avec cet identifiant: " + id</dd>
 </dl>
 </li>
 </ul>
@@ -168,7 +168,7 @@ extends java.lang.Iterable&lt;java.lang.String&gt;</pre>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>id</code> - l'identifiant unique du bean</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>l'instance associÈe</dd>
+<dd>l'instance associ√©e</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.RuntimeException</code> - "pas de bean avec cet identifiant: " + id</dd>
 </dl>
@@ -195,7 +195,7 @@ extends java.lang.Iterable&lt;java.lang.String&gt;</pre>
 <li class="blockList">
 <h4>getType</h4>
 <pre>java.lang.Class&lt;?&gt;&nbsp;getType(java.lang.String&nbsp;id)</pre>
-<div class="block">Obtention du type du bean ‡ partir de son identifiant.
+<div class="block">Obtention du type du bean √† partir de son identifiant.
  param id l'identifiant unique du bean</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -212,13 +212,13 @@ extends java.lang.Iterable&lt;java.lang.String&gt;</pre>
 <li class="blockList">
 <h4>iterator</h4>
 <pre>java.util.Iterator&lt;java.lang.String&gt;&nbsp;iterator()</pre>
-<div class="block">Obtention d'un itÈrateur sur les beans ptÈsents dans ce conteneur.
- L'opÈration de retrait : remove, est sans effet.</div>
+<div class="block">Obtention d'un it√©rateur sur les beans pt√©sents dans ce conteneur.
+ L'op√©ration de retrait : remove, est sans effet.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code>iterator</code>&nbsp;in interface&nbsp;<code>java.lang.Iterable&lt;java.lang.String&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>un itÈrateur des identifiants du conteneur</dd>
+<dd>un it√©rateur des identifiants du conteneur</dd>
 </dl>
 </li>
 </ul>

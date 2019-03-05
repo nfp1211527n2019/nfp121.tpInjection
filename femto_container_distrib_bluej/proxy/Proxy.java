@@ -1,4 +1,4 @@
-package femto_container_distrib_bluej.proxy;
+package proxy;
 
 
 public class Proxy implements Requete{

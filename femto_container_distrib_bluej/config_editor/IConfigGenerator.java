@@ -1,31 +1,31 @@
-package femto_container_distrib_bluej.config_editor;
+package config_editor;
 import java.io.FilenameFilter;
 
-/** Interface pour outils d'aide à la génération des fichiers de configuration,
- * fichiers destinés à femtoContainer.<br>
- * Chaque mutateur(<i>setter</i>) est identifié et engendre les items attendus dans le fichier de configuration,
+/** Interface pour outils d'aide Ã  la gÃ©nÃ©ration des fichiers de configuration,
+ * fichiers destinÃ©s Ã  femtoContainer.<br>
+ * Chaque mutateur(<i>setter</i>) est identifiÃ© et engendre les items attendus dans le fichier de configuration,
  * un mutateur doit respecter les conventions habituelles : void setXXXX(type elt)<br>
- * - Commencer par set, avoir un seul paramètre et ne pas retourner de résultat (void)<br>
- * Le format en sortie des items engendrés dépendent du <i>formatter</i> choisi.
+ * - Commencer par set, avoir un seul paramÃ¨tre et ne pas retourner de rÃ©sultat (void)<br>
+ * Le format en sortie des items engendrÃ©s dÃ©pendent du <i>formatter</i> choisi.
  */
 public interface IConfigGenerator{
 
-    /** Analyse d'un fichier .class ou d'un répertoire. Afin d'engendrer un fichier de configuration à "trous", 
-     * dans lequel il ne reste plus qu'à affecter les valeurs des attributs/propriétés.
-     * <b>Attention</b> au préalable setBeanClassFileName a été appelée<br>
+    /** Analyse d'un fichier .class ou d'un rÃ©pertoire. Afin d'engendrer un fichier de configuration Ã  "trous", 
+     * dans lequel il ne reste plus qu'Ã  affecter les valeurs des attributs/propriÃ©tÃ©s.
+     * <b>Attention</b> au prÃ©alable setBeanClassFileName a Ã©tÃ© appelÃ©e<br>
      */
     public IConfigGenerator analyze() throws Exception;
     
-    /** Analyse d'un fichier .class ou d'un répertoire. Afin d'engendrer un fichier de configuration à "trous", 
-     * dans lequel il ne reste plus qu'à affecter les valeurs des attributs/propriétés.
-     * Par défaut ce sont les fichiers .class d'un répertoire qui sont analysés.
-     * @param pathOrFileName un nom de fichier ou un nom de répertoire
+    /** Analyse d'un fichier .class ou d'un rÃ©pertoire. Afin d'engendrer un fichier de configuration Ã  "trous", 
+     * dans lequel il ne reste plus qu'Ã  affecter les valeurs des attributs/propriÃ©tÃ©s.
+     * Par dÃ©faut ce sont les fichiers .class d'un rÃ©pertoire qui sont analysÃ©s.
+     * @param pathOrFileName un nom de fichier ou un nom de rÃ©pertoire
      */
     public IConfigGenerator analyze(String pathOrFileName) throws Exception;
 
-    /** Analyse d'un fichier .class ou d'un répertoire. 
-     * @param pathOrFileName un nom de fichier ou un nom de répertoire
-     * @param filter permet de filtrer les fichiers du répertoire
+    /** Analyse d'un fichier .class ou d'un rÃ©pertoire. 
+     * @param pathOrFileName un nom de fichier ou un nom de rÃ©pertoire
+     * @param filter permet de filtrer les fichiers du rÃ©pertoire
      */
     public IConfigGenerator analyze(String pathOrFileName, FilenameFilter filter) throws Exception;
   
@@ -33,11 +33,11 @@ public interface IConfigGenerator{
     public void setBeanName(String beanName);
     public void setBeanPrefixName(String beanPrefixName);
     
-    /** Affectation du nom de la classe, ou du nom d'un répertoire.
+    /** Affectation du nom de la classe, ou du nom d'un rÃ©pertoire.
      */
     public void setBeanClassFileName(String beanClassName);
     
-    /** Choix du format de sortie. cf. le patron Stratégie.
+    /** Choix du format de sortie. cf. le patron StratÃ©gie.
      * @param formatter le format 
      */
     public void setFormatter(Formatter formatter);

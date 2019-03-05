@@ -1,14 +1,14 @@
-package femto_container_distrib_bluej.command;
+package command;
 
 public class Light{
     private String status;
     public void turnOn(){
-      this.status = "lampe allumée";
+      this.status = "lampe allumÃ©e";
       System.out.println(status);
     }
     
    public void turnOff(){
-       this.status = "lampe éteinte";
+       this.status = "lampe Ã©teinte";
        System.out.println(status);
     }
     

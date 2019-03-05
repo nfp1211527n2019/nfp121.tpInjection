@@ -1,4 +1,4 @@
-package femto_container_distrib_bluej.service_locator;
+package service_locator;
 
 import container.*;
 

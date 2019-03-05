@@ -1,8 +1,8 @@
-package femto_container_distrib_bluej.composite;
+package composite;
 
 import java.util.*;
 public class Composite extends Composant{
-    // variables d'instance - remplacez l'exemple qui suit par le vôtre
+    // variables d'instance - remplacez l'exemple qui suit par le vÃ´tre
     private List<Composant> liste;
 
     public Composite(){

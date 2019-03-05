@@ -1,21 +1,21 @@
-package femto_container_distrib_bluej.command;
+package command;
 
 
 
 public class Projecteur{
-    private String status = "projecteur éteint";
+    private String status = "projecteur Ã©teint";
     
     public void setStatus(String status){
         this.status = status;
     }
     
     public void turnOn(){
-      this.status = "projecteur allumé";
+      this.status = "projecteur allumÃ©";
       System.out.println(status);
     }
     
    public void turnOff(){
-       this.status = "projecteur éteint";
+       this.status = "projecteur Ã©teint";
        System.out.println(status);
     }
     

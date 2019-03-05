@@ -1,4 +1,4 @@
-package femto_container_distrib_bluej.syntaxe_exemples;
+package syntaxe_exemples;
 import java.util.Collection;
 public class Table{
     private Collection<Integer> collection;

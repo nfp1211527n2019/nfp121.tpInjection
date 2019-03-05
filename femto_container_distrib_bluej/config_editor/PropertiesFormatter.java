@@ -1,4 +1,4 @@
-package femto_container_distrib_bluej.config_editor;
+package config_editor;
 
 import java.util.Properties;
 import java.io.StringReader;

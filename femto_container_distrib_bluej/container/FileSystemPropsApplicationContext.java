@@ -1,4 +1,4 @@
-package femto_container_distrib_bluej.container;
+package container;
 
 import java.util.*;
 import java.io.*;
@@ -7,12 +7,12 @@ import java.lang.reflect.*;
 
 
 /**
- * <b>femtoContainer</b> Un conteneur de beans réalisé pour le cours NFP121, http://jfod.cnam.fr/NFP121/.
- * <br>Injection de dépendances par mutateur.<br>
+ * <b>femtoContainer</b> Un conteneur de beans rÃ©alisÃ© pour le cours NFP121, http://jfod.cnam.fr/NFP121/.
+ * <br>Injection de dÃ©pendances par mutateur.<br>
  * Le fichier de configuration est de type "Properties".<br>
- * Les beans de ce conteneur respectent les conventions d'écriture habituelles des beans<br>
+ * Les beans de ce conteneur respectent les conventions d'Ã©criture habituelles des beans<br>
  * <br><br>
- * Les propriétés de chaque bean sont :<br>
+ * Les propriÃ©tÃ©s de chaque bean sont :<br>
  * <pre>
  * bean.id.<i>N</i>=<i><b>nom</b>, l'identifiant unique du bean</i>
  * <i><b>nom</b></i>.class=<i>le nom de la classe</i>
@@ -21,27 +21,27 @@ import java.lang.reflect.*;
  * <i><b>nom</b></i>.property.2=<i>le nom de l'attribut</i>
  * <i><b>nom</b></i>.property.2.param.1=<i>une constante, ou l'identifiant d'un bean</i>
  * </pre>
- * Avec N[1..K], N étant un nombre entier.<br>
- * Ces nombres doivent former une suite croissante avec un incrément de 1<br><br>
- * Les paramètres des attributs sont des constantes issues des 8 types primitifs ou bien <br>
+ * Avec N[1..K], N Ã©tant un nombre entier.<br>
+ * Ces nombres doivent former une suite croissante avec un incrÃ©ment de 1<br><br>
+ * Les paramÃ¨tres des attributs sont des constantes issues des 8 types primitifs ou bien <br>
  *   la constante null ou encore un nom de classe (avec le suffixe ".class").<br>
- * Un paramètre comme une table de constantes ou d'identifiants de beans est autorisé.<br>
- * Chaque élément de la table est séparé par une espace
+ * Un paramÃ¨tre comme une table de constantes ou d'identifiants de beans est autorisÃ©.<br>
+ * Chaque Ã©lÃ©ment de la table est sÃ©parÃ© par une espace
  * 
  * <br><br>
  * 
  * Exemple : une table<br>
  * <pre>
  * bean.id.1=table
- * <i># Création par le conteneur de new question1.Table();</i>
+ * <i># CrÃ©ation par le conteneur de new question1.Table();</i>
  * table.class=question1.Table
- * <i># Exécution par le conteneur de setListe(listeArray);</i>
+ * <i># ExÃ©cution par le conteneur de setListe(listeArray);</i>
  * table.property.1=liste
  * table.property.1.param.1=listeArray
- * <i># Exécution par le conteneur de setCapacite(4);</i>
+ * <i># ExÃ©cution par le conteneur de setCapacite(4);</i>
  * table.property.2=capacite
  * table.property.2.param.1=4
- * <i># Exécution par le conteneur de setInit(new []{2,55,6,1});</i>
+ * <i># ExÃ©cution par le conteneur de setInit(new []{2,55,6,1});</i>
  * table.property.3=init
  * table.property.3.param.1=2 55 6 1
  * # 
@@ -63,7 +63,7 @@ import java.lang.reflect.*;
  * </pre>
  * 
  * @author jean-michel Douin
- * @version 20 Février 2019
+ * @version 20 FÃ©vrier 2019
  * @see java.util.Properties, container.Factory, container.AbstractApplicationContext
  */
 public class FileSystemPropsApplicationContext extends AbstractApplicationContext{
@@ -71,7 +71,7 @@ public class FileSystemPropsApplicationContext extends AbstractApplicationContex
     private  static boolean T = false; // T comme Trace,
     // ou verbose=true dans le fichier de configuration
     // ou -Dverbose=true depuis la ligne de commandes
-    /** Les propriétés issues du fichier de configuration */
+    /** Les propriÃ©tÃ©s issues du fichier de configuration */
     private Properties props;
 
     public FileSystemPropsApplicationContext(){
@@ -80,7 +80,7 @@ public class FileSystemPropsApplicationContext extends AbstractApplicationContex
 
     /** Initialisation des beans  partir d'un nom de fichier.
      * @fileName le nom complet du fichier
-     * @Exception RuntimeException en cas d'échec(s)
+     * @Exception RuntimeException en cas d'Ã©chec(s)
      */
     public void setFileName(String fileName){
         try{
@@ -95,7 +95,7 @@ public class FileSystemPropsApplicationContext extends AbstractApplicationContex
     
     /** Initialisation des beans  partir d'une URL.
      * @url l'URL du fichier
-     * @Exception RuntimeException en cas d'échec(s)
+     * @Exception RuntimeException en cas d'Ã©chec(s)
      */
     public void setUrl(String url){
         try{
@@ -108,8 +108,8 @@ public class FileSystemPropsApplicationContext extends AbstractApplicationContex
     }
 
      /** Initialisation des beans d'un flux.
-     * @inputStream le flux en entrée
-     * @Exception RuntimeException en cas d'échec(s)
+     * @inputStream le flux en entrÃ©e
+     * @Exception RuntimeException en cas d'Ã©chec(s)
      */
     public FileSystemPropsApplicationContext(InputStream inputStream){
         super();
@@ -119,7 +119,7 @@ public class FileSystemPropsApplicationContext extends AbstractApplicationContex
     private void initialize(InputStream inputStream){
         Properties propsSystem = System.getProperties();
         
-        // la propriété verbose issue de la configuration
+        // la propriÃ©tÃ© verbose issue de la configuration
         String verbose = propsSystem.getProperty("verbose","false");
         try{
             T = T || Boolean.parseBoolean(verbose);
@@ -128,13 +128,13 @@ public class FileSystemPropsApplicationContext extends AbstractApplicationContex
 
         this.props = new Properties();
         try{
-            props.load(inputStream); // chargement des propriétés
+            props.load(inputStream); // chargement des propriÃ©tÃ©s
             try{
-                // le paramètre global verbose est prioritaire sur le local
+                // le paramÃ¨tre global verbose est prioritaire sur le local
                 T = T || Boolean.parseBoolean(props.getProperty("verbose","false"));
             }catch(Exception e){
             }
-            verifyProperties(); // vérification du contenu, des propriétés, suite croissante, etc...
+            verifyProperties(); // vÃ©rification du contenu, des propriÃ©tÃ©s, suite croissante, etc...
             analyzeProperties();// injections par mutateurs
         }catch(Exception e){
             e.printStackTrace();
@@ -142,30 +142,30 @@ public class FileSystemPropsApplicationContext extends AbstractApplicationContex
         }
     }
 
-    /** Quelques vérifications du fichier de properties, 
-     * loin d'être exaustives...
+    /** Quelques vÃ©rifications du fichier de properties, 
+     * loin d'Ãªtre exaustives...
      */
     private void verifyProperties() throws RuntimeException{
         try{
             if(T)System.out.print("verifyProperties.");
             List<Object> cles = new ArrayList<Object>(props.keySet());
-            Properties properties = new Properties(props); // copie par prévention
+            Properties properties = new Properties(props); // copie par prÃ©vention
             String premier = properties.getProperty("bean.id.1");
             if(premier==null) throw new RuntimeException("bean.id.1 est absent ???");
             int indexBean=1;
             int somme = 0;
-            String id = properties.getProperty("bean.id." +indexBean); // de 1 à N
+            String id = properties.getProperty("bean.id." +indexBean); // de 1 Ã  N
             while(id!=null){
 
                 String className = properties.getProperty(id+".class");
-                if(className==null) throw new RuntimeException("id présent, mais pas "+id+".class");
+                if(className==null) throw new RuntimeException("id prÃ©sent, mais pas "+id+".class");
 
                 int indexProperty = 1; 
                 String propertyName = properties.getProperty(id+".property."+indexProperty);
                 while(propertyName!=null){
-                    if(propertyName.length()==0)throw new RuntimeException(id+".property."+indexProperty + " ne peut-être vide");
+                    if(propertyName.length()==0)throw new RuntimeException(id+".property."+indexProperty + " ne peut-Ãªtre vide");
                     String propertyId = properties.getProperty(id+".property."+indexProperty+".param.1");
-                    if(propertyId==null)throw new RuntimeException("property présent, mais pas "+id+".property."+indexProperty+".param.1");
+                    if(propertyId==null)throw new RuntimeException("property prÃ©sent, mais pas "+id+".property."+indexProperty+".param.1");
                     indexProperty++;
                     propertyName = properties.getProperty(id+".property."+indexProperty); 
                 }
@@ -202,7 +202,7 @@ public class FileSystemPropsApplicationContext extends AbstractApplicationContex
                 beanIdList.add("bean.id." +indexBean);
 
                 String className = props.getProperty(id+".class");
-                if(className==null)throw new RuntimeException("id présent, mais pas de "+id+".class");
+                if(className==null)throw new RuntimeException("id prÃ©sent, mais pas de "+id+".class");
                 if(T)System.out.println("className: " + className);
                 Class<?> beanClass = null;
                 try{
@@ -220,15 +220,15 @@ public class FileSystemPropsApplicationContext extends AbstractApplicationContex
                 id = props.getProperty("bean.id." +indexBean);
             }
 
-            // Intialisation dans l'ordre alphabétique des noms des beans...
+            // Intialisation dans l'ordre alphabÃ©tique des noms des beans...
             // for(String idBean : beans.keySet()){
             //   if(T)System.out.println(idBean +  ", appels des mutateurs:");
             // initializePropertiesBean(idBean);
             // }
 
-            // Initialisation dans l'ordre des numéros des beans
+            // Initialisation dans l'ordre des numÃ©ros des beans
             // note: un bean peut avoir comme attribut un bean 
-            // préalablement initalisé
+            // prÃ©alablement initalisÃ©
             for(String idNumber : beanIdList){
                 String idBean = props.getProperty(idNumber);
                 if(T)System.out.println("id: " +idNumber + ", " + idBean +  ", appels des mutateurs:");
@@ -239,8 +239,8 @@ public class FileSystemPropsApplicationContext extends AbstractApplicationContex
         }
     }
 
-    /** Initialisation des attributs numérotés de 1 à N.
-     * Les mutateurs sont exécutés.
+    /** Initialisation des attributs numÃ©rotÃ©s de 1 Ã  N.
+     * Les mutateurs sont exÃ©cutÃ©s.
      */
     private void initializePropertiesBean(String id){
         int indexProperty = 1;
@@ -249,27 +249,27 @@ public class FileSystemPropsApplicationContext extends AbstractApplicationContex
         String propertyName = props.getProperty(id+".property."+indexProperty);
         while(bean!=null && propertyName!=null){
             try{
-                // un setter(mutateur) ne peut avoir qu'un seul paramètre, soit .param.1
+                // un setter(mutateur) ne peut avoir qu'un seul paramÃ¨tre, soit .param.1
                 String propertyId = props.getProperty(id+".property."+indexProperty+".param.1");
                 try{
-                    // conversion habituelle, 1ère lettre de l'attribut en Majuscule
+                    // conversion habituelle, 1Ã¨re lettre de l'attribut en Majuscule
                     // private type property;
                     String prop = Character.toUpperCase(propertyName.charAt(0)) + propertyName.substring(1);
-                    // setProperty(???) est recherchée (concaténation avec "set")
+                    // setProperty(???) est recherchÃ©e (concatÃ©nation avec "set")
                     Method setter  = findMethod(id, "set"+prop, propertyName);
-                    // le type attendu (???) est issu de la déclaration du setter
+                    // le type attendu (???) est issu de la dÃ©claration du setter
                     Class<?> classExpected = setter.getParameterTypes()[0];
 
                     Object arg = beans.get(propertyId); // si arg != null, c'est un bean existant
                     if(classExpected.isArray() || arg==null){ 
-                        // si arg==null, ce ne peut être qu'une constante ou bien c'est un tableau
+                        // si arg==null, ce ne peut Ãªtre qu'une constante ou bien c'est un tableau
                         if(T)System.out.println("\t"+id+"\t\tset"+prop  + "(" + propertyId + ")");
-                        // création de l'unique paramètre du mutateur
+                        // crÃ©ation de l'unique paramÃ¨tre du mutateur
                         arg = newInstance(classExpected, propertyId);
                     }else{
                         if(T)System.out.println("\t"+id+"\t\tset"+prop  + "(" + arg + ")");
                     }
-                    // exécution du setter
+                    // exÃ©cution du setter
                     setter.invoke(bean, arg);
                 }catch(Exception e){
                     if(T)e.printStackTrace();
@@ -291,28 +291,28 @@ public class FileSystemPropsApplicationContext extends AbstractApplicationContex
         Class<?> cl = beans.get(id).getClass();
         while(cl!=Object.class && propertyClass==null){
             try{
-                // cet attribut est-il déclaré dans cette classe ?
+                // cet attribut est-il dÃ©clarÃ© dans cette classe ?
                 Field f = cl.getDeclaredField(propertyName);
                 propertyClass = f.getType(); 
             }catch(Exception e){
             }finally{
-                // remontée de l'arbre d'héritage à la recherche de cet attribut
+                // remontÃ©e de l'arbre d'hÃ©ritage Ã  la recherche de cet attribut
                 cl = cl.getSuperclass(); 
             }
         }
         // si propertyClass == null, 
         //   il n'y a pas d'attribut avec ce nom mais le setter est en place, 
-        //   une délégation par exemple...
+        //   une dÃ©lÃ©gation par exemple...
         if(T && propertyClass==null)
             System.out.println("\t"+id+"\t"+propertyName + " n'existe pas ???");
         try{
             return beans.get(id).getClass().getMethod(methodName,propertyClass); 
         }catch(Exception e){
             // ici, un setter mais pas d'attribut i.e. propertyClass==null
-            // attention si plusieurs méthodes avec le même nom, peu probable pour un setter
+            // attention si plusieurs mÃ©thodes avec le mÃªme nom, peu probable pour un setter
             for(Method m : beans.get(id).getClass().getMethods()){
-                if(m.getName().equals(methodName)){    // même nom
-                    if((m.getParameterTypes().length==1))// un setter a une arité de 1
+                if(m.getName().equals(methodName)){    // mÃªme nom
+                    if((m.getParameterTypes().length==1))// un setter a une aritÃ© de 1
                         return m;
                 }
             }
@@ -320,11 +320,11 @@ public class FileSystemPropsApplicationContext extends AbstractApplicationContex
         return null;
     }
 
-    // nouvelle instance de l'objet à injecter, objet issu d'une constante
+    // nouvelle instance de l'objet Ã  injecter, objet issu d'une constante
     // une constante en 8 types primitifs possibles et leur wrapper
-    // Les tableaux dont les éléments sont des beans ou "wrapper" sont possibles 
+    // Les tableaux dont les Ã©lÃ©ments sont des beans ou "wrapper" sont possibles 
 
-    /** Obtention d'une nouvelle instance à injecter.
+    /** Obtention d'une nouvelle instance Ã  injecter.
      * @param cl la classe de l'attribut
      * @param str la valeur extraite du fichier de configuration
      */
@@ -348,13 +348,13 @@ public class FileSystemPropsApplicationContext extends AbstractApplicationContex
 
     private Object parseArray(Class<?> cl, String str) throws Exception{
         Class<?> elementClass = cl.getComponentType();
-        String[] t = str.split(" "); // le séparateur est un espace
-        // un tableau est créé
+        String[] t = str.split(" "); // le sÃ©parateur est un espace
+        // un tableau est crÃ©Ã©
         Object tab = Array.newInstance(elementClass, t.length);
         for(int i=0;i<t.length;i++){
             Object elt = beans.get(t[i]);
             if(elt==null) { // ce n'est pas un bean du conteneur
-                // appel du parse associé au type de cette constante
+                // appel du parse associÃ© au type de cette constante
                 elt = newInstance(elementClass, t[i]);
             }
             Array.set(tab, i, elt);
@@ -362,19 +362,19 @@ public class FileSystemPropsApplicationContext extends AbstractApplicationContex
         return tab;
     }
 
-    /* Utilitaire créé pour le type primitif char. */
+    /* Utilitaire crÃ©Ã© pour le type primitif char. */
     private static char parseChar(String str){
         return str.charAt(0);
     } 
 
-    /* Utilitaire créé pour une instance de type String. */
+    /* Utilitaire crÃ©Ã© pour une instance de type String. */
     private static String parseString(String str){
         return new String(str);
     }
 
-    /* Utilitaire créé pour une instance de type Object, ne devrait pas se produire. */
+    /* Utilitaire crÃ©Ã© pour une instance de type Object, ne devrait pas se produire. */
     private static Object parseObject(String str){
-        System.err.println("parseObject est appelé ??? Attention String par défaut");
+        System.err.println("parseObject est appelÃ© ??? Attention String par dÃ©faut");
         return new String(str);
     }
 
@@ -396,7 +396,7 @@ public class FileSystemPropsApplicationContext extends AbstractApplicationContex
             map.put(Double.class, Double.class.getMethod("parseDouble",String.class));
             map.put(boolean.class, Boolean.class.getMethod("parseBoolean",String.class));
             map.put(Boolean.class, Boolean.class.getMethod("parseBoolean",String.class));      
-            // Cas particulier, implémentées dans cette classe
+            // Cas particulier, implÃ©mentÃ©es dans cette classe
             map.put(char.class, FileSystemPropsApplicationContext.class.
                 getDeclaredMethod("parseChar",String.class));
             map.put(Character.class, FileSystemPropsApplicationContext.class.
@@ -404,12 +404,12 @@ public class FileSystemPropsApplicationContext extends AbstractApplicationContex
             map.put(String.class, FileSystemPropsApplicationContext.class.
                 getDeclaredMethod("parseString",String.class));
 
-            // Cas qui n'a pas de sens, retourne une String par défaut
+            // Cas qui n'a pas de sens, retourne une String par dÃ©faut
             map.put(Object.class, FileSystemPropsApplicationContext.class.
                 getDeclaredMethod("parseObject",String.class));      
 
         }catch(Exception e){
-            e.printStackTrace(); // peu probable, mais au cas où
+            e.printStackTrace(); // peu probable, mais au cas oÃ¹
         }
     }
 

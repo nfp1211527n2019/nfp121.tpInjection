@@ -12,7 +12,7 @@ public class AllTests extends junit.framework.TestCase{
         assertEquals("[4, 2, 3, 1]",table.toString());
         try{
             table.ajouter(5);
-            fail("Une exception doit être levée, la capacité de la table est atteinte...");
+            fail("Une exception doit Ãªtre levÃ©e, la capacitÃ© de la table est atteinte...");
         }catch(Exception e){
         }
         assertEquals(Table.class,ctx.getType("table"));
@@ -28,7 +28,7 @@ public class AllTests extends junit.framework.TestCase{
         assertEquals("[4, 2, 2, 1]",table.toString());
         try{
             table.ajouter(5);
-            fail("Une exception doit être levée, la capacité de la table est atteinte...");
+            fail("Une exception doit Ãªtre levÃ©e, la capacitÃ© de la table est atteinte...");
         }catch(Exception e){
         }
 
@@ -43,7 +43,7 @@ public class AllTests extends junit.framework.TestCase{
             table.ajouter(3);
             assertEquals("[1, 2, 3, 4]",table.toString());
             table.ajouter(6);
-            fail("Une exception doit être levée, la capacité de la table est atteinte...");
+            fail("Une exception doit Ãªtre levÃ©e, la capacitÃ© de la table est atteinte...");
         }catch(Exception e){
         }
         assertEquals(Table.class,ctx.getType("tableSet"));
@@ -66,7 +66,7 @@ public class AllTests extends junit.framework.TestCase{
     }
 
     public void testMessage()throws Exception{
-        // inspiré de :
+        // inspirÃ© de :
         // http://www.springbyexample.org/static/1.5/html/intro-to-ioc-creating-a-spring-application.html
         ApplicationContext ctx = Factory.createApplicationContext("./question1/exemples/README.TXT");
         Message message = (Message) ctx.getBean("message");
@@ -116,8 +116,8 @@ public class AllTests extends junit.framework.TestCase{
         IHM ihm = (IHM) ctx.getBean("ihm2");
         ihm.draw();
         ihm.doClick("un premier click !");
-        ihm.doClick("un deuxième ! ");
-        ihm.doClick("un troisième ! ");
+        ihm.doClick("un deuxiÃ¨me ! ");
+        ihm.doClick("un troisiÃ¨me ! ");
         ihm.doClick("un dernier ");
         Thread.sleep(1000);
         ihm.close();
@@ -128,8 +128,8 @@ public class AllTests extends junit.framework.TestCase{
         IHM ihm = (IHM) ctx.getBean("ihm3");
         ihm.draw();
         ihm.doClick("un premier click !");
-        ihm.doClick("un deuxième ! ");
-        ihm.doClick("un troisième ! ");
+        ihm.doClick("un deuxiÃ¨me ! ");
+        ihm.doClick("un troisiÃ¨me ! ");
         ihm.doClick("un dernier ");
         Thread.sleep(1000);
         ihm.close();

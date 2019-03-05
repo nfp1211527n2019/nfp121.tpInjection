@@ -1,4 +1,4 @@
-package femto_container_distrib_bluej.command;
+package command;
 
 import java.util.*;
 import container.*;
@@ -19,7 +19,7 @@ public class CommandTests extends junit.framework.TestCase{
         // Projecteur projecteur = ctx.getBean("projecteurDeLAmphi");
         // Command cmd = ctx.getBean("cmdProjecteur");
         // cmd.execute();
-        // assertEquals("projecteur allumé",projecteur.getStatus());
+        // assertEquals("projecteur allumÃ©",projecteur.getStatus());
     }
     
     public void testSansInjection() throws Exception{
@@ -34,7 +34,7 @@ public class CommandTests extends junit.framework.TestCase{
         invoker.off(); 
         invoker.on();
         invoker.off();
-        //assertEquals("lampe éteinte",lampe.getStatus());
+        //assertEquals("lampe Ã©teinte",lampe.getStatus());
         System.out.println("lampe.getStatus: " + lampe.getStatus());
     }
        public void testSansInjectionBis() throws Exception{
@@ -49,7 +49,7 @@ public class CommandTests extends junit.framework.TestCase{
         invoker.off(); 
         invoker.on();
         invoker.off();
-        assertEquals("projecteur éteint",projecteur.getStatus());
+        assertEquals("projecteur Ã©teint",projecteur.getStatus());
 
     }
 }

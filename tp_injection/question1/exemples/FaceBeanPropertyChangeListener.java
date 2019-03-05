@@ -10,7 +10,7 @@ public class FaceBeanPropertyChangeListener
   public void propertyChange(PropertyChangeEvent e) {
     String propertyName = e.getPropertyName();
     if ("longueur".equals(propertyName)) {
-      System.out.println("longueur a changé : " + e.getNewValue());
+      System.out.println("longueur a changÃ© : " + e.getNewValue());
       valeurLongueurRecue = (Integer)e.getNewValue();
     } //else if ("focusedWindow".equals(propertyName) {
     //...
@@ -22,7 +22,7 @@ public class FaceBeanPropertyChangeListener
     if ("longueur".equals(propertyName)) {
       if( ((Integer)e.getNewValue()) <=0){
         System.out.println("longueur a un veto : " + e.getNewValue());
-        throw new PropertyVetoException("valeur négative ou nulle",e);
+        throw new PropertyVetoException("valeur nÃ©gative ou nulle",e);
       }
       valeurLongueurRecue = (Integer)e.getNewValue();
     } //else if ("focusedWindow".equals(propertyName) {

@@ -1,4 +1,4 @@
-package femto_container_distrib_bluej.decorator;
+package decorator;
 
 
 import java.util.*;
@@ -12,7 +12,7 @@ public class DecoratorTests  extends junit.framework.TestCase{
         TexteI texteDecore = ctx.getBean("texteDecore");
         System.out.println("texteDecore: " + texteDecore.toHTML());
         //assertEquals("<U><B><I>Exemple</I></B></U>",texteDecore.toHTML());
-        //System.out.println("texte décoré: " + texteDecore.toHTML());
+        //System.out.println("texte dÃ©corÃ©: " + texteDecore.toHTML());
         
     }
     

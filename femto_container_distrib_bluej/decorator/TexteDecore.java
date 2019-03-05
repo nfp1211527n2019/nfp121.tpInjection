@@ -1,7 +1,7 @@
-package femto_container_distrib_bluej.decorator;
+package decorator;
 
 public abstract class TexteDecore implements TexteI{
-  private TexteI unTexte; // ? le texte à décorer
+  private TexteI unTexte; // ? le texte Ã  dÃ©corer
   public TexteDecore(){}
   public void setUnTexte(TexteI unTexte){
       this.unTexte = unTexte;
@@ -10,6 +10,6 @@ public abstract class TexteDecore implements TexteI{
     this.unTexte = unTexte; 
   }
   public String toHTML(){
-    return unTexte.toHTML(); // ? le texte décoré
+    return unTexte.toHTML(); // ? le texte dÃ©corÃ©
   }
 }

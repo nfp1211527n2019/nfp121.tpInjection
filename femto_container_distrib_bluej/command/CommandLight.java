@@ -1,8 +1,8 @@
-package femto_container_distrib_bluej.command;
+package command;
 
 
 public class CommandLight implements Command{
-    // variables d'instance - remplacez l'exemple qui suit par le vôtre
+    // variables d'instance - remplacez l'exemple qui suit par le vÃ´tre
     private Light lampe;
 
     public void setLampe(Light lampe){

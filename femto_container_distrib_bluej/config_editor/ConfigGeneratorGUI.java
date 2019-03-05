@@ -1,4 +1,4 @@
-package femto_container_distrib_bluej.config_editor;
+package config_editor;
 
 import javax.swing.*;
 import java.awt.event.*;
@@ -29,7 +29,7 @@ public class ConfigGeneratorGUI extends JFrame{
     }
 
     public ConfigGeneratorGUI(){
-        super("Interface d'aide à l'édition du fichier de configuration/femtoContainer");
+        super("Interface d'aide Ã  l'Ã©dition du fichier de configuration/femtoContainer");
 
         setLocation(10,10);
         setLayout(new BorderLayout(20,20));
@@ -82,16 +82,16 @@ public class ConfigGeneratorGUI extends JFrame{
     }
 
     private static final String description =
-        "ConfigGeneratorGui est une interface d'aide à la génération des fichiers de configuration.\n\n" +
-        "Chaque mutateur(setter) est détecté et l'outil engendre les items attendus pour le\n"+
-        "fichier de configuration, un mutateur est une méthode qui respecte les conventions habituelles.\n" +
-        "Un numéro de bean par fichier .class est attribué, les valeurs des attributs doivent ensuite être\n" +
-        "renseignées afin de produire un fichier de configuration avec les valeurs des attributs attendues.\n\n" +
+        "ConfigGeneratorGui est une interface d'aide Ã  la gÃ©nÃ©ration des fichiers de configuration.\n\n" +
+        "Chaque mutateur(setter) est dÃ©tectÃ© et l'outil engendre les items attendus pour le\n"+
+        "fichier de configuration, un mutateur est une mÃ©thode qui respecte les conventions habituelles.\n" +
+        "Un numÃ©ro de bean par fichier .class est attribuÃ©, les valeurs des attributs doivent ensuite Ãªtre\n" +
+        "renseignÃ©es afin de produire un fichier de configuration avec les valeurs des attributs attendues.\n\n" +
 
-        "Sont générées, les valeurs par défaut pour les types primitifs et leur \"wrapper\",\n" +
-        "et une description textuelle, synthétique de ce qui est attendu. a_ClassName_bean or an_array ...\n\n"+
+        "Sont gÃ©nÃ©rÃ©es, les valeurs par dÃ©faut pour les types primitifs et leur \"wrapper\",\n" +
+        "et une description textuelle, synthÃ©tique de ce qui est attendu. a_ClassName_bean or an_array ...\n\n"+
 
-        "Ci dessous un exemple de ce qui est généré,\n"+
+        "Ci dessous un exemple de ce qui est gÃ©nÃ©rÃ©,\n"+
         "il suffit ensuite de copier ce texte et d'indiquer ce qui est attendu cf. <--\n" +
         "afin d'obtenir un fichier de configuration pour femtoContainer\n\n" +
 

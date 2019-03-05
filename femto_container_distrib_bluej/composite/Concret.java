@@ -1,11 +1,11 @@
-package femto_container_distrib_bluej.composite;
+package composite;
 
 
 /**
- * Décrivez votre classe Concret ici.
+ * DÃ©crivez votre classe Concret ici.
  *
  * @author (votre nom)
- * @version (un numéro de version ou une date)
+ * @version (un numÃ©ro de version ou une date)
  */
 public class Concret extends Composant
 {

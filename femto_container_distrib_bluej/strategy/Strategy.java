@@ -1,10 +1,10 @@
-package femto_container_distrib_bluej.strategy;
+package strategy;
 
 
 /**
  * https://www.tutorialspoint.com/design_pattern/strategy_pattern.htm
  *
- * @version 7 décembre 2017
+ * @version 7 dÃ©cembre 2017
  */
 
 public interface Strategy{

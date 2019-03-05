@@ -1,11 +1,11 @@
-package femto_container_distrib_bluej.chainofresponsability;
+package chainofresponsability;
 
 
 /**
- * Décrivez votre classe HandlerB ici.
+ * DÃ©crivez votre classe HandlerB ici.
  *
  * @author (votre nom)
- * @version (un numéro de version ou une date)
+ * @version (un numÃ©ro de version ou une date)
  */
 public class HandlerB extends Handler {
 

@@ -6,8 +6,8 @@ import java.util.Iterator;
 import java.util.TreeMap;
 import java.util.ArrayList;
 /**
- * <b>femtoContainer</b> Un conteneur de beans adaptÈ au cours NFP121.
- * Injection de dÈpendances par mutateur.
+ * <b>femtoContainer</b> Un conteneur de beans adapt√© au cours NFP121.
+ * Injection de d√©pendances par mutateur.
  * Ce conteneur est aussi un bean cf. ServiceLocator.
  *
  * @author jm Douin
@@ -21,7 +21,7 @@ public abstract class AbstractApplicationContext implements ApplicationContext, 
   private String name;
   
   public AbstractApplicationContext(){
-    this.beans = new TreeMap<String, Object>(); // identifiants des beans, par ordre alphabÈtique
+    this.beans = new TreeMap<String, Object>(); // identifiants des beans, par ordre alphab√©tique
   }
   
   public void setName(String name){
@@ -48,7 +48,7 @@ public abstract class AbstractApplicationContext implements ApplicationContext, 
   
   public void addApplicationContext(ApplicationContext context){
     for(String id : context){
-      if(beans.get(id)!=null) throw new RuntimeException("dÈj‡ un bean avec cet identifiant: " + id);
+      if(beans.get(id)!=null) throw new RuntimeException("d√©j√† un bean avec cet identifiant: " + id);
       beans.put(id, context.getBean(id));
     }
   }

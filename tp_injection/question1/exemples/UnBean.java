@@ -37,7 +37,7 @@ public class UnBean implements java.io.Serializable {
     }
   }
 
-  // modif set pour femtoContainer, set déclenche add
+  // modif set pour femtoContainer, set dÃ©clenche add
   public void setPropertyChangeListener(PropertyChangeListener listener){
     addPropertyChangeListener(listener);
   }

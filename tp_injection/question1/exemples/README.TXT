@@ -38,7 +38,7 @@ message.class=question1.exemples.Message
 message.property.1=message
 message.property.1.param.1=Cnam/NFP121 femtoContainer is fun
 
-# tests de différents appels de mutateur
+# tests de diffÃ©rents appels de mutateur
 bean.id.8=properties
 properties.class=question1.exemples.PropertiesType
 properties.property.1=b

@@ -1,4 +1,4 @@
-package femto_container_distrib_bluej.decorator;
+package decorator;
 
 public class B extends TexteDecore{
   

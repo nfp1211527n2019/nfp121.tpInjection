@@ -1,4 +1,4 @@
-package femto_container_distrib_bluej.chainofresponsability;
+package chainofresponsability;
 
 
 public class HandlerA extends Handler {

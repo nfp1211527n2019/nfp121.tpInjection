@@ -1,4 +1,4 @@
-package femto_container_distrib_bluej.command;
+package command;
 
 public class MacroCommand implements Command{
     private Command[] commands;

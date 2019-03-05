@@ -21,7 +21,7 @@ public class GUI extends JFrame{
     private Properties  props;
 
     public GUI(){
-        super("Modeste éditeur du fichier de configuration pour femtoContainer/NFP121");
+        super("Modeste Ã©diteur du fichier de configuration pour femtoContainer/NFP121");
         props = new Properties();
         setLocation(10,10);
         setLayout(new BorderLayout(20,20));
@@ -70,8 +70,8 @@ public class GUI extends JFrame{
         add(panel,BorderLayout.WEST);
 
         configText.setFont(new Font("Serif", Font.PLAIN, 14));
-        configText.setText("#\n#   Ci-dessous, un exemple de ce qui sera engendré, \n" +
-                           "#  cf. le fichier " + FILE_NAME + ", même répertoire\n" + example);
+        configText.setText("#\n#   Ci-dessous, un exemple de ce qui sera engendrÃ©, \n" +
+                           "#  cf. le fichier " + FILE_NAME + ", mÃªme rÃ©pertoire\n" + example);
         //
         configText.setRows(12);
         JScrollPane scrollPane = new JScrollPane(configText);
@@ -82,10 +82,10 @@ public class GUI extends JFrame{
             outFile.println("# femtoContainer, un fichier de configuration");
             DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
             Date date = new Date();
-            outFile.println("# généré par config_editor.GUI le " + dateFormat.format(date));
+            outFile.println("# gÃ©nÃ©rÃ© par config_editor.GUI le " + dateFormat.format(date));
             outFile.println("#");
         } catch (IOException e) {
-            configText.setText("# exception, à la création du fichier : .\\" + FILE_NAME);
+            configText.setText("# exception, Ã  la crÃ©ation du fichier : .\\" + FILE_NAME);
         }
         //scrollPane.setBounds(10,60,780,500);
         //scrollPane.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
@@ -99,13 +99,13 @@ public class GUI extends JFrame{
                     if(outFile!=null){
                         outFile.flush();
                         outFile.close();
-                        String message = "Après analyse, le fichier généré semble correct, cf. " + FILE_NAME;
+                        String message = "AprÃ¨s analyse, le fichier gÃ©nÃ©rÃ© semble correct, cf. " + FILE_NAME;
                         try{
                             verifyProperties();
                         }catch(RuntimeException exc){
                             message = exc.getMessage();
                         }
-                        JOptionPane.showMessageDialog(GUI.this, message, "Vérification.",JOptionPane.WARNING_MESSAGE);
+                        JOptionPane.showMessageDialog(GUI.this, message, "VÃ©rification.",JOptionPane.WARNING_MESSAGE);
 
                     }
                     System.exit(0);
@@ -131,11 +131,11 @@ public class GUI extends JFrame{
             addParamButton.setEnabled(true); nextButton.setEnabled(true);
             this.number = Integer.parseInt(numberBean.getText());
             if(number==1 && first){
-                configText.setText("");// suppression de l'exemple, création du fichier
+                configText.setText("");// suppression de l'exemple, crÃ©ation du fichier
                 configText.setFont(new Font("Serif", Font.PLAIN, 18));
 
             }
-            if(first){ // la 1ère fois le numéro du bean, son nom, sa classe
+            if(first){ // la 1Ã¨re fois le numÃ©ro du bean, son nom, sa classe
                 first = false;
                 String res = "bean.id."+number+"="+beanName;
                 props.put("bean.id."+number,beanName);
@@ -151,7 +151,7 @@ public class GUI extends JFrame{
             nameBean.setEnabled(false);
             classBean.setEnabled(false);
 
-            // pour chaque paramètre
+            // pour chaque paramÃ¨tre
             this.frame = new JFrame("add property ident and value, number "+paramNumber);
             JPanel panel = new JPanel();
             panel.setFont(new Font("Serif", Font.PLAIN, 16));
@@ -287,17 +287,17 @@ public class GUI extends JFrame{
         }
     }
 
-    /** Quelques vérifications du fichier de properties, loin d'être complètes
+    /** Quelques vÃ©rifications du fichier de properties, loin d'Ãªtre complÃ¨tes
      * 
      */
     private void verifyProperties() throws RuntimeException{
 
         java.util.List<Object> cles = new ArrayList<Object>(props.keySet());
-        Properties properties = new Properties(props); // copie par prévention
+        Properties properties = new Properties(props); // copie par prÃ©vention
         String premier = properties.getProperty("bean.id.1");
         if(premier==null) throw new RuntimeException("bean.id.1 est absent ???");
         int indexBean=1;
-        String id = properties.getProperty("bean.id." +indexBean); // de 1 à N
+        String id = properties.getProperty("bean.id." +indexBean); // de 1 Ã  N
         java.util.List<String> ids = new ArrayList<String>();
         while(id!=null){
             ids.add(id);
@@ -313,17 +313,17 @@ public class GUI extends JFrame{
         }
         indexBean=1;
         int somme = 0;
-        id = properties.getProperty("bean.id." +indexBean); // de 1 à N
+        id = properties.getProperty("bean.id." +indexBean); // de 1 Ã  N
         while(id!=null){
 
             String className = properties.getProperty(id+".class");
-            if(className==null) throw new RuntimeException("id présent, mais pas "+id+".class");
+            if(className==null) throw new RuntimeException("id prÃ©sent, mais pas "+id+".class");
 
             int indexProperty = 1; 
             String propertyName = properties.getProperty(id+".property."+indexProperty);
             while(propertyName!=null){        
                 String propertyId = properties.getProperty(id+".property."+indexProperty+".param.1");
-                if(propertyId==null)throw new RuntimeException("property présent, mais pas "+id+".property."+indexProperty+".param.1");
+                if(propertyId==null)throw new RuntimeException("property prÃ©sent, mais pas "+id+".property."+indexProperty+".param.1");
                 indexProperty++;
                 propertyName = properties.getProperty(id+".property."+indexProperty); 
             }

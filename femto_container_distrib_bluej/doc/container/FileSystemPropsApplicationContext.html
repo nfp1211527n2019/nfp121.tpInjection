@@ -59,12 +59,12 @@ var activeTableTab = "activeTableTab";
 <hr>
 <pre>public class <span class="typeNameLabel">FileSystemPropsApplicationContext</span>
 extends container.AbstractApplicationContext</pre>
-<div class="block"><b>femtoContainer</b> Un conteneur de beans réalisé pour le cours NFP121, http://jfod.cnam.fr/NFP121/.
- <br>Injection de dépendances par mutateur.<br>
+<div class="block"><b>femtoContainer</b> Un conteneur de beans rÃ©alisÃ© pour le cours NFP121, http://jfod.cnam.fr/NFP121/.
+ <br>Injection de dÃ©pendances par mutateur.<br>
  Le fichier de configuration est de type "Properties".<br>
- Les beans de ce conteneur respectent les conventions d'écriture habituelles des beans<br>
+ Les beans de ce conteneur respectent les conventions d'Ã©criture habituelles des beans<br>
  <br><br>
- Les propriétés de chaque bean sont :<br>
+ Les propriÃ©tÃ©s de chaque bean sont :<br>
  <pre>
  bean.id.<i>N</i>=<i><b>nom</b>, l'identifiant unique du bean</i>
  <i><b>nom</b></i>.class=<i>le nom de la classe</i>
@@ -73,27 +73,27 @@ extends container.AbstractApplicationContext</pre>
  <i><b>nom</b></i>.property.2=<i>le nom de l'attribut</i>
  <i><b>nom</b></i>.property.2.param.1=<i>une constante, ou l'identifiant d'un bean</i>
  </pre>
- Avec N[1..K], N étant un nombre entier.<br>
- Ces nombres doivent former une suite croissante avec un incrément de 1<br><br>
- Les paramètres des attributs sont des constantes issues des 8 types primitifs ou bien <br>
+ Avec N[1..K], N Ã©tant un nombre entier.<br>
+ Ces nombres doivent former une suite croissante avec un incrÃ©ment de 1<br><br>
+ Les paramÃ¨tres des attributs sont des constantes issues des 8 types primitifs ou bien <br>
    la constante null ou encore un nom de classe (avec le suffixe ".class").<br>
- Un paramètre comme une table de constantes ou d'identifiants de beans est autorisé.<br>
- Chaque élément de la table est séparé par une espace
+ Un paramÃ¨tre comme une table de constantes ou d'identifiants de beans est autorisÃ©.<br>
+ Chaque Ã©lÃ©ment de la table est sÃ©parÃ© par une espace
  
  <br><br>
  
  Exemple : une table<br>
  <pre>
  bean.id.1=table
- <i># Création par le conteneur de new question1.table();</i>
+ <i># CrÃ©ation par le conteneur de new question1.table();</i>
  table.class=question1.Table
- # Exécution par le conteneur de setListe(listeArray);
+ # ExÃ©cution par le conteneur de setListe(listeArray);
  table.property.1=liste
  table.property.1.param.1=listeArray
- # Exécution par le conteneur de setCapacite(4);
+ # ExÃ©cution par le conteneur de setCapacite(4);
  table.property.2=capacite
  table.property.2.param.1=4
- # Exécution par le conteneur de setInit(new []{2,55,6,1});
+ # ExÃ©cution par le conteneur de setInit(new []{2,55,6,1});
  table.property.3=init
  table.property.3.param.1=2 55 6 1
  # 
@@ -115,7 +115,7 @@ extends container.AbstractApplicationContext</pre>
  </pre></div>
 <dl>
 <dt><span class="simpleTagLabel">Version:</span></dt>
-<dd>20 Février 2019</dd>
+<dd>20 FÃ©vrier 2019</dd>
 <dt><span class="simpleTagLabel">Author:</span></dt>
 <dd>jean-michel Douin</dd>
 </dl>

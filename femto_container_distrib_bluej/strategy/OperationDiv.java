@@ -1,11 +1,11 @@
-package femto_container_distrib_bluej.strategy;
+package strategy;
 
 
 /**
- * Décrivez votre classe OperationDiv ici.
+ * DÃ©crivez votre classe OperationDiv ici.
  *
  * @author (votre nom)
- * @version (un numéro de version ou une date)
+ * @version (un numÃ©ro de version ou une date)
  */
 public class OperationDiv implements Strategy{
    @Override

@@ -1,4 +1,4 @@
-package femto_container_distrib_bluej.composite;
+package composite;
 import container.*;
 
 public class Main{

@@ -22,8 +22,8 @@ public class IHMTests extends junit.framework.TestCase{
         IHM ihm = (IHM) ctx.getBean("ihm2");
         ihm.draw();
         ihm.doClick("un premier click !");
-        ihm.doClick("un deuxième ! ");
-        ihm.doClick("un troisième ! ");
+        ihm.doClick("un deuxiÃ¨me ! ");
+        ihm.doClick("un troisiÃ¨me ! ");
         ihm.doClick("un dernier ");
         Thread.sleep(1000);
         ihm.close();
@@ -34,8 +34,8 @@ public class IHMTests extends junit.framework.TestCase{
         IHM ihm = (IHM) ctx.getBean("ihm3");
         ihm.draw();
         ihm.doClick("un premier click !");
-        ihm.doClick("un deuxième ! ");
-        ihm.doClick("un troisième ! ");
+        ihm.doClick("un deuxiÃ¨me ! ");
+        ihm.doClick("un troisiÃ¨me ! ");
         ihm.doClick("un dernier ");
         Thread.sleep(1000);
         ihm.close();

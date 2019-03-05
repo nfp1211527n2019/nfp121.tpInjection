@@ -1,4 +1,4 @@
-package femto_container_distrib_bluej.strategy;
+package strategy;
 // https://www.tutorialspoint.com/design_pattern/strategy_pattern.htm
 public class StrategyPatternDemo {
    public static void main(String[] args) {

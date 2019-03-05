@@ -1,7 +1,7 @@
-package femto_container_distrib_bluej.config_editor;
+package config_editor;
 
 
-/** Interface pour la génération du fichier de configuration selon plusieurs formats.
+/** Interface pour la gÃ©nÃ©ration du fichier de configuration selon plusieurs formats.
  * 
  */
 public interface Formatter{

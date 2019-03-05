@@ -17,11 +17,11 @@
 // 
 // # MovieLister est l'identifiant du bean
 // bean.id.1=MovieLister
-// # à quelle classe java ce bean est-il associé ?
+// # Ã  quelle classe java ce bean est-il associÃ© ?
 // MovieLister.class=question1.MovieLister
-// # Quelle propriété est à affecter, ici une seule
+// # Quelle propriÃ©tÃ© est Ã  affecter, ici une seule
 // MovieLister.property.1=finder
-// # Le mutateur n'a qu'un paramètre
+// # Le mutateur n'a qu'un paramÃ¨tre
 // MovieLister.property.1.param.1=MovieFinder
 // 
 // bean.id.2=MovieFinder
@@ -31,7 +31,7 @@
 // 
 // 
 
-package femto_container_distrib_bluej.martin_fowler;
+package martin_fowler;
 
 import java.util.*;
 import container.*;

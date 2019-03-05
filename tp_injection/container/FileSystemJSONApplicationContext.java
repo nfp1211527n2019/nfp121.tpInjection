@@ -10,7 +10,7 @@ public class FileSystemJSONApplicationContext extends AbstractApplicationContext
   public FileSystemJSONApplicationContext(InputStream inputStream){
     super();
     try{
-      // à compléter
+      // Ã  complÃ©ter
       
       
     }catch(Exception e){

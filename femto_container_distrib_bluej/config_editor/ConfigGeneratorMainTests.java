@@ -1,4 +1,4 @@
-package femto_container_distrib_bluej.config_editor;
+package config_editor;
 
 import java.util.*;
 import java.io.*;
@@ -62,7 +62,7 @@ public class ConfigGeneratorMainTests{
             File file = new File("syntaxe_exemples/configHtml.html");
             Desktop.getDesktop().browse(new URI("file:///"+file.getCanonicalPath().replace('\\','/')));
         }else{
-            System.out.println("à l'aide d'un navigateur, ouvrez le fichier syntaxe_exemples/configHtml.html");
+            System.out.println("Ã  l'aide d'un navigateur, ouvrez le fichier syntaxe_exemples/configHtml.html");
         }
 
         htmlFormatter = new HtmlFormatter();
@@ -79,7 +79,7 @@ public class ConfigGeneratorMainTests{
             File file = new File("martin_fowler/configHtml.html");
             Desktop.getDesktop().browse(new URI("file:///"+file.getCanonicalPath().replace('\\','/')));
         }else{
-            System.out.println("à l'aide d'un navigateur, ouvrez le fichier martin_fowler/configHtml.html");
+            System.out.println("Ã  l'aide d'un navigateur, ouvrez le fichier martin_fowler/configHtml.html");
         }
     }
 }

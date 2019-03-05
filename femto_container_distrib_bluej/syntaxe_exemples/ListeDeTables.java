@@ -1,8 +1,8 @@
-package femto_container_distrib_bluej.syntaxe_exemples;
+package syntaxe_exemples;
 
 import java.util.*;
-/** Un usage 'détourné' de l'appel du mutateur.
- *  L'appel du mutateur ajoute le paramètre transmis à une liste interne.
+/** Un usage 'dÃ©tournÃ©' de l'appel du mutateur.
+ *  L'appel du mutateur ajoute le paramÃ¨tre transmis Ã  une liste interne.
  */
 
 public class ListeDeTables{

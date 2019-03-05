@@ -23,7 +23,7 @@ public class FaceBeanTests extends junit.framework.TestCase{
     
     assertEquals(10, listener.valeurLongueurRecue);
     assertEquals(10, bean.getLongueur());
-    bean.setLongueur(-1); // un véto a été installé, cf config
+    bean.setLongueur(-1); // un vÃ©to a Ã©tÃ© installÃ©, cf config
     assertEquals(10, bean.getLongueur());
      
   }

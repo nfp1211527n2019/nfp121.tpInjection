@@ -12,7 +12,7 @@ public class TableTests extends junit.framework.TestCase{
         assertEquals("[4, 2, 3, 1]",table.toString());
         try{
             table.ajouter(5);
-            fail("Une exception doit être levée, la capacité de la table est atteinte...");
+            fail("Une exception doit Ãªtre levÃ©e, la capacitÃ© de la table est atteinte...");
         }catch(Exception e){
         }
         assertEquals(Table.class,ctx.getType("table"));
@@ -28,7 +28,7 @@ public class TableTests extends junit.framework.TestCase{
         assertEquals("[4, 2, 2, 1]",table.toString());
         try{
             table.ajouter(5);
-            fail("Une exception doit être levée, la capacité de la table est atteinte...");
+            fail("Une exception doit Ãªtre levÃ©e, la capacitÃ© de la table est atteinte...");
         }catch(Exception e){
         }
 
@@ -43,7 +43,7 @@ public class TableTests extends junit.framework.TestCase{
             table.ajouter(3);
             assertEquals("[1, 2, 3, 4]",table.toString());
             table.ajouter(6);
-            fail("Une exception doit être levée, la capacité de la table est atteinte...");
+            fail("Une exception doit Ãªtre levÃ©e, la capacitÃ© de la table est atteinte...");
         }catch(Exception e){
         }
         assertEquals(Table.class,ctx.getType("tableSet"));

@@ -1,4 +1,4 @@
-package femto_container_distrib_bluej.container;
+package container;
 import java.io.*;
 
 
@@ -11,7 +11,7 @@ public class FileSystemXMLApplicationContext extends AbstractApplicationContext{
   public FileSystemXMLApplicationContext(InputStream inputStream){
     super();
     try{
-      // à compléter
+      // Ã  complÃ©ter
       
       
     }catch(Exception e){

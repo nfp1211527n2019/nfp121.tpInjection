@@ -1,4 +1,4 @@
-package femto_container_distrib_bluej.service_locator;
+package service_locator;
 
 import java.util.*;
 import container.*;
@@ -40,7 +40,7 @@ public class ServiceLocator implements ServiceLocatorI{
   
   public void setContainer(ApplicationContext container) throws Exception{
     try{
-        assert container.getName()!=null:"attention à la précédence des initialisation des beans...";
+        assert container.getName()!=null:"attention Ã  la prÃ©cÃ©dence des initialisation des beans...";
         containers.put(container.getName(),container);
     }catch(Exception e){
         throw e;

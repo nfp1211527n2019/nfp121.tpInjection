@@ -1,4 +1,4 @@
-package femto_container_distrib_bluej.strategy;
+package strategy;
 
 import container.Factory;
 import container.ApplicationContext;
