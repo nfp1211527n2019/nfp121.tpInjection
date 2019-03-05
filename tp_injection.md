@@ -416,8 +416,7 @@ public interface ApplicationContext extends Iterable<String>{
   public java.util.Iterator<String> iterator();
 }
 ```
-            
-
+          
 N'oubliez pas d'utiliser JNEWS afin de déposer vos exemples, menu Outils, 
 item submit..., Scheme tp_injection_question1_deposer
 
@@ -531,32 +530,18 @@ observateur.class=question1.LightObserver
 Cycle C
 </div>
 
-            
-            &nbsp;&nbsp;&nbsp; F<font size="3">emtoContainer 
-            est bien entendu perfectible, tout ajout, toutes modifications sont 
-            les bienvenus et seront intégrés, à l'outil pour l'an prochain.
+**_`femtoContainer`_**  est bien entendu perfectible, tout ajout, toutes modifications sont les bienvenus et seront intégrés, à l'outil pour l'an prochain.
 
-            &nbsp;&nbsp;&nbsp; Les traces en mode verbeux, 
-            l'exécution possible par introspection de n'importe quelle méthode, 
-            la gestion des erreurs issue d'un fichier de configuration erroné 
-            pourrait être ajoutées ou améliorées. 
-            &nbsp;&nbsp;&nbsp; Un autre format du fichier de configuration XML, JSON 
-... peut être proposé. L'interface graphique engendrant le fichier de 
-configuration XMLou JSON pourrait elle aussi être enrichie ou réécrite.
-            JSON : à l'aide de cette librairie par exemple, 
-            voir <a href="https://www.jmdoudoux.fr/java/dej/chap-gson.htm">
-            https://www.jmdoudoux.fr/java/dej/chap-gson.htm</a>
-            
-            
-<font size="3">            
-			
+Les traces en mode verbeux, 
+l'exécution possible par introspection de n'importe quelle méthode, 
+la gestion des erreurs issue d'un fichier de configuration erroné
+pourrait être ajoutées ou améliorées. 
 
-			
-			
-      
-			
-        </div>
-        <div id="footer">
-            <a class="lien" href="http://jfod.cnam.fr/" target="_blank">JFOD</a> | <a class="lien" href="http://deptmedia.cnam.fr/phpBB2/viewforum.php?f=40" target="_blank">FORUM</a> | <a class="lien" href="http://www.cnam.fr/" target="_blank">CNAM</a>
-        </div>
-    </div>
+Un autre format du fichier de configuration XML, JSON  ... peut être proposé. 
+L'interface graphique engendrant le fichier de 
+configuration XML ou JSON pourrait elle aussi être enrichie ou réécrite.
+
+JSON : à l'aide de cette librairie par exemple, 
+ voir <a href="https://www.jmdoudoux.fr/java/dej/chap-gson.htm">https://www.jmdoudoux.fr/java/dej/chap-gson.htm</a>
+            
+          
