@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Client
+comment1.params=requete
+comment1.target=void\ setRequete(Requete)
+comment2.params=url
+comment2.target=java.lang.String\ executer(java.lang.String)
+numComments=3

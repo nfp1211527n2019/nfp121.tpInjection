@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=ListeDeTables
+comment0.text=\ Un\ usage\ 'd\u00E9tourn\u00E9'\ de\ l'appel\ du\ mutateur.\r\n\ \ L'appel\ du\ mutateur\ ajoute\ le\ param\u00E8tre\ transmis\ \u00E0\ une\ liste\ interne.\r\n
+comment1.params=
+comment1.target=ListeDeTables()
+comment2.params=t
+comment2.target=void\ setTable(Table)
+comment3.params=tables
+comment3.target=void\ setTables(Table[])
+comment4.params=
+comment4.target=int\ taille()
+comment5.params=
+comment5.target=java.lang.String\ toString()
+numComments=6

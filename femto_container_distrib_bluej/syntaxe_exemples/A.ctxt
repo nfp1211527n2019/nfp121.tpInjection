@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=A
+comment1.params=f
+comment1.target=void\ setF(float)
+comment2.params=
+comment2.target=float\ getF()
+comment3.params=tab
+comment3.target=void\ setTab(int[])
+comment4.params=
+comment4.target=int[]\ getTab()
+comment5.params=
+comment5.target=A()
+comment6.params=i
+comment6.target=void\ setI(I)
+comment7.params=ti
+comment7.target=void\ setTi(I[])
+comment8.params=
+comment8.target=I\ getI()
+comment9.params=
+comment9.target=I[]\ getTi()
+numComments=10

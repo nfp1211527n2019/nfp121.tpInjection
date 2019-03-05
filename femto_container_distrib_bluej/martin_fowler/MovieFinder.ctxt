@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=MovieFinder
+comment1.params=
+comment1.target=java.util.List\ findAll()
+comment2.params=filename
+comment2.target=void\ setFilename(java.lang.String)
+numComments=3

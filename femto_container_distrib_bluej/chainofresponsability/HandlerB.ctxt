@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=HandlerB
+comment0.text=\r\n\ D\u00E9crivez\ votre\ classe\ HandlerB\ ici.\r\n\r\n\ @author\ (votre\ nom)\r\n\ @version\ (un\ num\u00E9ro\ de\ version\ ou\ une\ date)\r\n
+comment1.params=number
+comment1.target=boolean\ handleRequest(int)
+numComments=2

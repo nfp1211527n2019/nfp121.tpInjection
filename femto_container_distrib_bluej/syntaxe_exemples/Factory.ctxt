@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Factory
+comment1.params=
+comment1.target=java.lang.Object\ getInstance()
+comment2.params=cl
+comment2.target=void\ setInstance(java.lang.Class)
+numComments=3

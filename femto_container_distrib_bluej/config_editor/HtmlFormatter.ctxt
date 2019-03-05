@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=HtmlFormatter
+comment1.params=
+comment1.target=HtmlFormatter()
+comment2.params=
+comment2.target=void\ newLine()
+comment3.params=comment
+comment3.target=void\ newComment(java.lang.String)
+comment4.params=beanNumber\ completeBeanName
+comment4.target=void\ newBeanId(int,\ java.lang.String)
+comment5.params=completeBeanName\ beanClassName
+comment5.target=void\ newBeanClass(java.lang.String,\ java.lang.String)
+comment6.params=number\ completeBeanName\ propertyName
+comment6.target=void\ newBeanPropertyKey(int,\ java.lang.String,\ java.lang.String)
+comment7.params=number\ completeBeanName\ propertyName\ propertyValue
+comment7.target=void\ newBeanPropertyValue(int,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+comment8.params=action
+comment8.target=void\ setAction(java.lang.String)
+comment9.params=
+comment9.target=java.lang.String\ get()
+numComments=10

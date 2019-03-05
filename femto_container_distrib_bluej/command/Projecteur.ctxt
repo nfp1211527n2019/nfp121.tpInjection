@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Projecteur
+comment1.params=status
+comment1.target=void\ setStatus(java.lang.String)
+comment2.params=
+comment2.target=void\ turnOn()
+comment3.params=
+comment3.target=void\ turnOff()
+comment4.params=
+comment4.target=java.lang.String\ getStatus()
+numComments=5

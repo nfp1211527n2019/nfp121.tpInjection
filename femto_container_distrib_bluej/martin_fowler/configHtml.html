@@ -1,0 +1,34 @@
+<HTML>
+<FORM method="POST" action="http://localhost:8086/femto_services/config.html">
+<PRE><FONT size=5>
+bean.id.1=<b>assembler</b>
+<b>assembler</b>.class=martin_fowler.Assembler
+
+bean.id.2=<b>colonMovieFinder</b>
+<b>colonMovieFinder</b>.class=martin_fowler.ColonMovieFinder
+<b>colonMovieFinder</b>.property.1=filename
+<b>colonMovieFinder</b>.property.1.param.1=<input style='font-size: 20px;' type="text" size=8name="colonMovieFinder.property.1.param.1" value="a_String">
+
+bean.id.3=<b>martinFowlerExampleTests</b>
+<b>martinFowlerExampleTests</b>.class=martin_fowler.MartinFowlerExampleTests
+
+bean.id.4=<b>movie</b>
+<b>movie</b>.class=martin_fowler.Movie
+
+bean.id.5=<b>movieFinder</b>
+<b>movieFinder</b>.class=martin_fowler.MovieFinder
+<b>movieFinder</b>.property.1=filename
+<b>movieFinder</b>.property.1.param.1=<input style='font-size: 20px;' type="text" size=8name="movieFinder.property.1.param.1" value="a_String">
+
+bean.id.6=<b>movieLister</b>
+<b>movieLister</b>.class=martin_fowler.MovieLister
+<b>movieLister</b>.property.1=finder
+<b>movieLister</b>.property.1.param.1=<input style='font-size: 20px;' type="text" size=18name="movieLister.property.1.param.1" value="a_MovieFinder_bean">
+
+bean.id.7=<b>semiColonMovieFinder</b>
+<b>semiColonMovieFinder</b>.class=martin_fowler.SemiColonMovieFinder
+<b>semiColonMovieFinder</b>.property.1=filename
+<b>semiColonMovieFinder</b>.property.1.param.1=<input style='font-size: 20px;' type="text" size=8name="semiColonMovieFinder.property.1.param.1" value="a_String">
+<br><input type="submit" value="Submit"></FONT></PRE></FORM>
+
+</HTML>

@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=OperationDiv
+comment0.text=\r\n\ D\u00E9crivez\ votre\ classe\ OperationDiv\ ici.\r\n\r\n\ @author\ (votre\ nom)\r\n\ @version\ (un\ num\u00E9ro\ de\ version\ ou\ une\ date)\r\n
+comment1.params=num1\ num2
+comment1.target=int\ doOperation(int,\ int)
+numComments=2

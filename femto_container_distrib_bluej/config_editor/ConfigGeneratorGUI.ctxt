@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=ConfigGeneratorGUI
+comment1.params=configGenerator
+comment1.target=void\ setConfigConfigurator(IConfigGenerator)
+comment2.params=number
+comment2.target=void\ setNumberBean(int)
+comment3.params=classBean
+comment3.target=void\ setClassBean(java.lang.String)
+comment4.params=
+comment4.target=ConfigGeneratorGUI()
+comment5.params=args
+comment5.target=void\ main(java.lang.String[])
+numComments=6
