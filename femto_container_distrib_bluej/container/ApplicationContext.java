@@ -1,10 +1,10 @@
 package container;
 
 /**
- * <b>femtoContainer</b> est unn conteneur de beans adaptÃ© au cours NFP121 du Cnam.<br><br>
- * L'injection des dÃ©pendances est effectuÃ©e par l'appel des mutateurs.<br>
- * Un fichier de configuration prÃ©cise les noms des beans et des propriÃ©tÃ©s Ã  injecter<br>
- * Le format du fichier est dÃ©fini depuis la classe Factory cf. la classe container.Factory<br><br>
+ * <b>femtoContainer</b> est unn conteneur de beans adapté au cours NFP121 du Cnam.<br><br>
+ * L'injection des dépendances est effectuée par l'appel des mutateurs.<br>
+ * Un fichier de configuration précise les noms des beans et des propriétés à injecter<br>
+ * Le format du fichier est défini depuis la classe Factory cf. la classe container.Factory<br><br>
  *
  * <br><u>Un exemple d'utilisation:</u><br>
  * <pre>
@@ -28,28 +28,28 @@ public interface ApplicationContext extends Iterable<String>{
   /** Obtention d'une instance d'un bean du conteneur.
    *  Il n'existe qu'une seule instance avec cet id (un singleton).
    * @param id l'identifiant unique du bean
-   * @return l'instance associÃ©e
+   * @return l'instance associée
    * @throws RuntimeException "pas de bean avec cet identifiant: " + id
    */
   public <T> T getBean(String id);
   
-  /** Obtention du type du bean Ã  partir de son identifiant.
+  /** Obtention du type du bean à partir de son identifiant.
    * @param id l'identifiant unique du bean
    * @return le type,instance de la classe Class du bean
    * @throws RuntimeException "pas de bean avec cet identifiant: " + id
    */
   public Class<?> getType(String id);
   
-  /** Obtention d'un itÃ©rateur sur les beans prÃ©sents dans ce conteneur.
-   * L'opÃ©ration de retrait : remove, est sans effet.
-   * @return un itÃ©rateur des identifiants du conteneur
+  /** Obtention d'un itérateur sur les beans présents dans ce conteneur.
+   * L'opération de retrait : remove, est sans effet.
+   * @return un itérateur des identifiants du conteneur
    */
   public java.util.Iterator<String> iterator();
   
   /** Ajout, cumul d'une autre instance d'ApplicationContext
-   * Tous les beans de l'instance appContext sont ajoutÃ©s au conteneur en cours.
-   * @param appContext le conteneur Ã  ajouter
-   * @throws RuntimeException "dÃ©jÃ  un bean avec cet identifiant: " + id
+   * Tous les beans de l'instance appContext sont ajoutés au conteneur en cours.
+   * @param appContext le conteneur à ajouter
+   * @throws RuntimeException "déjà un bean avec cet identifiant: " + id
    */
   public void addApplicationContext(ApplicationContext appContext);
 }

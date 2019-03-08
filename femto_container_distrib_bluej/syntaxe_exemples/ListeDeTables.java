@@ -1,8 +1,8 @@
 package syntaxe_exemples;
 
 import java.util.*;
-/** Un usage 'dÃ©tournÃ©' de l'appel du mutateur.
- *  L'appel du mutateur ajoute le paramÃ¨tre transmis Ã  une liste interne.
+/** Un usage 'détourné' de l'appel du mutateur.
+ *  L'appel du mutateur ajoute le paramètre transmis à une liste interne.
  */
 
 public class ListeDeTables{

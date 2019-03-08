@@ -14,7 +14,6 @@ configGenerator1.property.4.param.1=propertiesFormatter1
 configGenerator1.property.5=beanClassFileName
 configGenerator1.property.5.param.1=config_editor.ConfigGenerator
 
-
 bean.id.2=propertiesFormatter1
 propertiesFormatter1.class=config_editor.PropertiesFormatter
 

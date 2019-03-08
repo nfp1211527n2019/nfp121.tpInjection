@@ -19,11 +19,19 @@ public class PropertiesFormatter implements Formatter{
     public void newLine(){
         sb.append("\n");
     }
-
+    public void newLine(int numberLine){
+        for(int i = 0; i<numberLine;i++) newLine();
+    }
     public void newComment(String comment){
         sb.append("# " + comment);
     }
-
+    public void newCommentLine(){
+        sb.append("#\n");
+    }
+    public void newText(String text){
+        sb.append(text);
+    }
+    
     public void newBeanId(int beanNumber, String beanName){
         sb.append("bean.id."+beanNumber+"="+beanName);
     }

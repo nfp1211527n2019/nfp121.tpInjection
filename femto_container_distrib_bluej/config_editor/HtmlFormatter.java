@@ -13,11 +13,20 @@ public class HtmlFormatter implements Formatter{
         sb.append("\r\n");
     }
 
+    public void newText(String text){
+        sb.append(text);
+    }
+    
+    public void newLine(int numberLine){
+        for(int i = 0; i<numberLine;i++) newLine();
+    }
     public void newComment(String comment){
         sb.append("<!-- " + comment + " -->");
         //sb.append("<i>" + comment + "</i>");
     }
-
+    public void newCommentLine(){
+        sb.append("<!--\n-->");
+    }
     public void newBeanId(int beanNumber, String completeBeanName){
         sb.append("bean.id."+beanNumber+"=<b>"+completeBeanName+"</b>");
     }

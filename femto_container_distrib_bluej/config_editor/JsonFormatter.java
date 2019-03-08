@@ -20,7 +20,14 @@ public class JsonFormatter implements Formatter{
 
     public void newComment(String comment){
     }
-
+    
+    public void newLine(int numberLine){
+    }
+    public void newCommentLine(){
+    }
+    public void newText(String text){
+    }
+    
     public void newBeanId(int beanNumber, String completeBeanName){
     }
 

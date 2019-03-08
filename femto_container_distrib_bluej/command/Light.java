@@ -3,12 +3,12 @@ package command;
 public class Light{
     private String status;
     public void turnOn(){
-      this.status = "lampe allumÃ©e";
+      this.status = "lampe allumée";
       System.out.println(status);
     }
     
    public void turnOff(){
-       this.status = "lampe Ã©teinte";
+       this.status = "lampe éteinte";
        System.out.println(status);
     }
     

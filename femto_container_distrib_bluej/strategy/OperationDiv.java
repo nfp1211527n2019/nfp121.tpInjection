@@ -2,10 +2,10 @@ package strategy;
 
 
 /**
- * DÃ©crivez votre classe OperationDiv ici.
+ * Décrivez votre classe OperationDiv ici.
  *
  * @author (votre nom)
- * @version (un numÃ©ro de version ou une date)
+ * @version (un numéro de version ou une date)
  */
 public class OperationDiv implements Strategy{
    @Override

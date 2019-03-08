@@ -17,8 +17,8 @@ public class SemiColonMovieFinder implements MovieFinder {
       System.out.println("SemiColonMovieFinder ...");
     List<Movie> list = new ArrayList<Movie>();
     // 
-    list.add(new Movie("Dans les forÃªts de SibÃ©rie","NEBBOU Safy"));
-    list.add(new Movie("Demain","LAURENT MÃ©lanie / DION Cyril"));
+    list.add(new Movie("Dans les forêts de Sibérie","NEBBOU Safy"));
+    list.add(new Movie("Demain","LAURENT Mélanie / DION Cyril"));
     list.add(new Movie("Once Upon a Time in the West","Sergio Leone"));
     return list;
   }

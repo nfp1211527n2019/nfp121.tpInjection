@@ -2,7 +2,7 @@ package command;
 
 
 public class CommandLight implements Command{
-    // variables d'instance - remplacez l'exemple qui suit par le vÃ´tre
+    // variables d'instance - remplacez l'exemple qui suit par le vôtre
     private Light lampe;
 
     public void setLampe(Light lampe){

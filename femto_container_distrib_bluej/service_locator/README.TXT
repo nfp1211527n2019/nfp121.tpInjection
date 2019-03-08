@@ -14,8 +14,8 @@ bean.id.2=exemples
 exemples.class=container.FileSystemPropsApplicationContext
 exemples.property.1=fileName
 exemples.property.1.param.1=./syntaxe_exemples/README.TXT
-# le ichier de config se trouve Ã  une url, cf. rÃ©pertoire serveurWeb8086 
-# avec console> java ServeurWeb886 au prÃ©alable
+# le ichier de config se trouve à une url, cf. répertoire serveurWeb8086 
+# avec console> java ServeurWeb886 au préalable
 #exemples.property.1=url
 #exemples.property.1.param.1=http://localhost:8086/config.props
 exemples.property.2=name

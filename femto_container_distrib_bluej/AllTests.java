@@ -1,5 +1,3 @@
- 
-
 
 import static org.junit.Assert.*;
 import org.junit.After;
@@ -20,8 +18,8 @@ public class AllTests extends junit.framework.TestCase{
 
     static{
         Properties propsSystem = System.getProperties();
-        propsSystem.setProperty("verbose","true");
-        //propsSystem.setProperty("verbose","false");
+        //propsSystem.setProperty("verbose","true");
+        propsSystem.setProperty("verbose","false");
     }
 
     

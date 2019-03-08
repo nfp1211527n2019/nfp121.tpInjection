@@ -1,5 +1,5 @@
-# exemple extrait du support, NFP121, injection de dÃ©pendances
-# exemples des possibilitÃ©s syntaxiques du fichier de config 
+# exemple extrait du support, NFP121, injection de dépendances
+# exemples des possibilités syntaxiques du fichier de config 
 #verbose=true
 
 # un bean avec 'a' comme indentifiant

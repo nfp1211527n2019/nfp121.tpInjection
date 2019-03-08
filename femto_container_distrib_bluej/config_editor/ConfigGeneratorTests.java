@@ -6,6 +6,7 @@ import java.util.Properties;
 import java.util.*;
 
 public class ConfigGeneratorTests extends junit.framework.TestCase{
+    
     public void testConfigGenerator() throws Exception{
         ApplicationContext ctx = Factory.createApplicationContext("./config_editor/README.TXT");
 
@@ -33,6 +34,17 @@ public class ConfigGeneratorTests extends junit.framework.TestCase{
 
         IConfigGenerator configGeneratorDir = ctx.getBean("configGeneratorDir");
         assertTrue(configGeneratorDir.getFormatter() instanceof PropertiesFormatter);
+        
+// bean.id.3=configGeneratorDir
+// configGeneratorDir.class=config_editor.ConfigGenerator
+// configGeneratorDir.property.1=beanPrefixName
+// configGeneratorDir.property.1.param.1=pre_
+// configGeneratorDir.property.2=beanNumber
+// configGeneratorDir.property.2.param.1=5
+// configGeneratorDir.property.3=formatter
+// configGeneratorDir.property.3.param.1=propertiesFormatter2
+// configGeneratorDir.property.4=beanClassFileName
+// configGeneratorDir.property.4.param.1=config_editor/
 
         configGeneratorDir.analyze();
         System.out.println(configGeneratorDir.getFormatter().get());

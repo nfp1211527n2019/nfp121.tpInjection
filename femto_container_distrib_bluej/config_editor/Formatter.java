@@ -1,13 +1,18 @@
 package config_editor;
 
 
-/** Interface pour la gÃ©nÃ©ration du fichier de configuration selon plusieurs formats.
+/** Interface pour la génération du fichier de configuration selon plusieurs formats.
  * 
  */
 public interface Formatter{
     
   public void newLine();
+  public void newText(String text);
+  
   public void newComment(String comment);
+  public void newCommentLine();
+  
+  
   
   public void newBeanId(int beanNumber, String beanName);
   

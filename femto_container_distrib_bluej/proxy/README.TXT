@@ -3,7 +3,7 @@
 bean.id.1=client
 client.class=proxy.Client
 client.property.1=requete
-# variabilitÃ© ici
+# variabilité ici
 #client.property.1.param.1=proxy
 client.property.1.param.1=proxy1
 

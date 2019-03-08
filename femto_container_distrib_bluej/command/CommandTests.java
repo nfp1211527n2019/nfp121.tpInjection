@@ -19,7 +19,7 @@ public class CommandTests extends junit.framework.TestCase{
         // Projecteur projecteur = ctx.getBean("projecteurDeLAmphi");
         // Command cmd = ctx.getBean("cmdProjecteur");
         // cmd.execute();
-        // assertEquals("projecteur allumÃ©",projecteur.getStatus());
+        // assertEquals("projecteur allumé",projecteur.getStatus());
     }
     
     public void testSansInjection() throws Exception{
@@ -34,7 +34,7 @@ public class CommandTests extends junit.framework.TestCase{
         invoker.off(); 
         invoker.on();
         invoker.off();
-        //assertEquals("lampe Ã©teinte",lampe.getStatus());
+        //assertEquals("lampe éteinte",lampe.getStatus());
         System.out.println("lampe.getStatus: " + lampe.getStatus());
     }
        public void testSansInjectionBis() throws Exception{
@@ -49,7 +49,7 @@ public class CommandTests extends junit.framework.TestCase{
         invoker.off(); 
         invoker.on();
         invoker.off();
-        assertEquals("projecteur Ã©teint",projecteur.getStatus());
+        assertEquals("projecteur éteint",projecteur.getStatus());
 
     }
 }

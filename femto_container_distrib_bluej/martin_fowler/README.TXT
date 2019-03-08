@@ -16,12 +16,12 @@
 
 # MovieLister est l'identifiant du bean
 bean.id.1=movieLister
-# Ã  quelle classe java ce bean est-il associÃ© ?
+# à quelle classe java ce bean est-il associé ?
 movieLister.class=martin_fowler.MovieLister
 
-# Quelle propriÃ©tÃ© est Ã  affecter, ici une seule
+# Quelle propriété est à affecter, ici une seule
 movieLister.property.1=finder
-# Le mutateur a un seul paramÃ¨tre
+# Le mutateur a un seul paramètre
 movieLister.property.1.param.1=movieFinder
 
 bean.id.2=movieFinder

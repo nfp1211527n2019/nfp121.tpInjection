@@ -1,5 +1,6 @@
 #BlueJ class context
 comment0.target=ConfigGeneratorGUI
+comment0.text=\ Interface\ d'aide\ \u00E0\ la\ g\u00E9n\u00E9ration\ du\ fichier\ de\ configuration.\r\n\ @author\ jean-michel\ Douin\r\n\ @version\ Mars\ 2019\r\n\ @see\ config_editor.ConfigGenerator\r\n
 comment1.params=configGenerator
 comment1.target=void\ setConfigConfigurator(IConfigGenerator)
 comment2.params=number

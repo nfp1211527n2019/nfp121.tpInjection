@@ -17,11 +17,11 @@ public class MainConfigGeneratorTests{
         //System.out.println(configGenerator.analyze("syntaxe_exemples/").getFormatter().get());
 
         configGenerator.setBeanName("a");
-        configGenerator.setBeanClassFileName("syntaxe_exemples.A");
+        configGenerator.setBeanClassName("syntaxe_exemples.A");
         System.out.println(configGenerator.analyze().getFormatter().get());
         
         configGenerator.setBeanName("table");
-        configGenerator.setBeanClassFileName("syntaxe_exemples.Table");
+        configGenerator.setBeanClassName("syntaxe_exemples.Table");
         System.out.println(configGenerator.analyze().getFormatter().get());
         
         // configGenerator.setBeanName("listeDeTables");

@@ -18,7 +18,7 @@ public class ProxyTests extends junit.framework.TestCase{
     }
     public void testSansInjection(){
         Requete reel = new Reel();
-        // Proxy proxy = new Proxy(); // variabilitÃ© ici
+        // Proxy proxy = new Proxy(); // variabilité ici
         Proxy1 proxy = new Proxy1();
         proxy.setFiltre(".fr");
         proxy.setRequete(reel);

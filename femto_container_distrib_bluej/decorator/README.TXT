@@ -5,7 +5,7 @@ texte.class=decorator.Texte
 # setTexte
 texte.property.1=texte
 #setTexte("Exemple")
-texte.property.1.param.1=Bonne annÃ©e
+texte.property.1.param.1=Bonne année
 
 bean.id.2=i
 i.class=decorator.I
