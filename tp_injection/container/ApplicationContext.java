@@ -1,4 +1,4 @@
-package tp_injection.container;
+package container;
 
 /**
  * <b>femtoContainer</b> est unn conteneur de beans adapté au cours NFP121 du Cnam.<br><br>

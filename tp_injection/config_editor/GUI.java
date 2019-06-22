@@ -1,4 +1,4 @@
-package tp_injection.config_editor;
+package config_editor;
 
 import javax.swing.*;
 import java.awt.*;

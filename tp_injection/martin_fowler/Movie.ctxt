@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Movie
+comment1.params=title\ director
+comment1.target=Movie(java.lang.String,\ java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ getTitle()
+comment3.params=
+comment3.target=java.lang.String\ getDirector()
+numComments=4

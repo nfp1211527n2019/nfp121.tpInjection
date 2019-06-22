@@ -1,4 +1,4 @@
-package tp_injection.service_locator;
+package service_locator;
 
 import java.util.*;
 import container.*;
@@ -20,7 +20,8 @@ public class ServiceLocator implements ServiceLocatorI{
       for(ApplicationContext container : containers.values()){
         for( String bean : container){
           if(serviceName.equals(bean)){ // en cas de doublon, le premier de la liste
-            Object service = container.getBean(bean);
+            System.out.println(bean+" with "+ serviceName);
+              Object service = container.getBean(bean);
             cache.put(serviceName, service);
             return (T)service;
           }
